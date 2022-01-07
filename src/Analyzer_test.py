@@ -1,9 +1,7 @@
-from Analyzer import Analyzer
-
-a = Analyzer()
+import Analyzer as linter
 
 formulas = [
-   "--p",
+    "--p",
     "(p>(q>(r>s)))",
     "-(((p>-q)&q)#-s)",
     "((p.r)^(p>q))",
@@ -45,4 +43,4 @@ formulas = [
 print("[T/F] | Formula\n--------|---------")
 
 for i in formulas:
-    print(f'{a.isFormula(i)}\t| {i}')
+    print(f"{linter.is_formula(i)}\t| {i}")
