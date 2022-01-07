@@ -3,13 +3,6 @@ import Cnf as cnf
 # Arquivo para testes:
 
 formulas = [
-    '((a&b)#(c&d))',
-    '(a>(b>c))',
-    '((a>b)>c)',
-    '((a>b)>(c>d))',
-    '-(a>-(b>c))',
-    '((a#b)>c)',
-
     '(((p>q)>p)>p)', 
     '((p#q)>-(q#r))', 
     '(-(p&q))',
