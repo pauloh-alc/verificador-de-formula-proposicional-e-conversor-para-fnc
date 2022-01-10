@@ -30,8 +30,14 @@ def get_brackets_idx(formula: str, k: int) -> tuple:
     return idx_i, idx_f
 
 
+# Responsável por remover os espaços em branco.
+def format(formula: str) -> str:
+    return formula.replace(" ", "")
+
+
 # Step 1 - redefinir implicações em termos de disjunção e negação [ok]
 def remove_implies(formula: str) -> str:
+    formula = format(formula)
     k = 0
     while ">" in formula:
         if formula[k] == ">":
